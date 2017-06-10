@@ -33,3 +33,4 @@ outer.addEventListener('click', function (e) {
     console.log('target: ' + e.target + ' ' + 'currentTarget: ' + e.currentTarget)
 }, false)
 ```
+![img](https://github.com/hugeloveu/jewel/blob/master/comparison/assets/target-currentTarget.png)
