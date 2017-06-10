@@ -1,6 +1,6 @@
 #### 遍历对象属性的方法
 
-- Object.prototype.hasOwnProperty
+- **Object.prototype.hasOwnProperty**
 
 > 所有继承了 Object 的对象都会继承到 hasOwnProperty 方法。此方法可以用来检测一个对象是否含有特定的**自身属性**；与 in 运算符不同，该方法会忽略那些从原型链上继承到的属性。
 
@@ -30,7 +30,8 @@ foo.hasOwnProperty('bar'); // 始终返回 false
 Object.prototype.hasOwnProperty.call(foo, 'bar'); // true
 ```
 
-- Object.getOwnPropertyNames
+- **Object.getOwnPropertyNames**
+
 > Object.getOwnPropertyNames 返回一个由指定对象的所有自身属性的属性名组成的数组。包括不可枚举的自身属性。
 
 ```JavaScript
@@ -39,7 +40,8 @@ var arr = ['a', 'b', 'c'];
 console.log(Object.getOwnPropertyNames(arr)); // ['0', '1', '2', 'length']
 ```
 
-- for...in
+- **for...in**
+
 > `for...in` 以**任意序**迭代一个数组或者对象的**可被枚举**的属性，因为是任意顺序迭代，所以不建议用之来遍历一个下标顺序很重要的 Array。
 
 ```JavaScript
@@ -54,7 +56,8 @@ for (var prop in obj) {
 // c
 ```
 
-- Object.keys()
+- **Object.keys()**
+
 > `Object.keys()` 方法返回一个由给定对象的自身可枚举属性组成的数组，**数组中属性名的排序和使用 `for...in` 循环遍历对象时返回的顺序一致**
 
 ```JavaScript
