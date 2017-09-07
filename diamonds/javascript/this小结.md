@@ -1,8 +1,8 @@
 #### this小结
 
-`this`是 javascript 中的一个关键字，它调用的方式多种多样，但本质上 this 总是指向函数据以执行的环境对象
+`this`是 javascript 中的一个关键字，它调用的方式多种多样，但本质上 this 总是指向函数据以执行的环境对象.
 
-1. 函数参数中的 `this`
+1. 作为函数参数
 
 ```javascript
 let fruit = {
